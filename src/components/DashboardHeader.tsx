@@ -3,9 +3,11 @@
 import { useMemo } from "react";
 import { DateRange } from "react-day-picker";
 import callData from "@/mock/calls.json";
-import { DateRangePicker } from "./date-range-picker";
-import { ClearFiltersButton } from "./ClearFiltersButton";
-import { FilterSelect } from "./filter-select";
+import {
+  ClearFiltersButton,
+  DateRangePicker,
+  FilterSelect,
+} from "@/components";
 
 interface DashboardHeaderProps {
   dateRange: DateRange | undefined;

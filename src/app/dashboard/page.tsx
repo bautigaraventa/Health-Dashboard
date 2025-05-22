@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { DashboardHeader } from "@/components/DashboardHeader";
+import { DashboardHeader, PageHeader } from "@/components";
 import { useDashboardMetrics } from "@/hooks/useDashboardMetrics";
 import { DateRange } from "react-day-picker";
 import callsMock from "@/mock/calls.json";
@@ -12,7 +12,6 @@ import { EvaluationRateChart } from "@/components/charts/EvaluationRateChart";
 import { QAEvaluationRateChart } from "@/components/charts/QAEvaluationRateChart";
 import { KpiCards } from "@/components/dashboard/KpiCards";
 import { Call } from "@/types";
-import { PageHeader } from "@/components/PageHeader";
 
 export default function DashboardPage() {
   const [dateRange, setDateRange] = useState<DateRange | undefined>(undefined);

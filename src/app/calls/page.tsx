@@ -1,6 +1,5 @@
 import { columns } from "./columns";
-import { DataTable } from "@/components/data-table";
-import { PageHeader } from "@/components/PageHeader";
+import { DataTable, PageHeader } from "@/components";
 import callData from "@/mock/calls.json";
 
 export default function CallsPage() {

@@ -3,10 +3,9 @@
 import { Table } from "@tanstack/react-table";
 import { Input } from "@/components/ui/input";
 import { DateRange } from "react-day-picker";
-import { DateRangePicker } from "@/components/date-range-picker";
+import { DateRangePicker } from "@/components";
 import React, { useEffect, useState } from "react";
-import { ClearFiltersButton } from "./ClearFiltersButton";
-import { FilterSelect } from "./filter-select";
+import { ClearFiltersButton, FilterSelect } from "@/components";
 
 interface TableToolbarProps<TData> {
   table: Table<TData>;

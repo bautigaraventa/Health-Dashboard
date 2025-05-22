@@ -10,7 +10,7 @@ import {
 } from "recharts";
 import { ChartCard } from "./ChartCard";
 import { QAEvaluationDataPoint } from "@/types";
-import { NoData } from "../NoData";
+import { NoData } from "@/components";
 
 interface QAEvaluationRateChartProps {
   data: QAEvaluationDataPoint[];

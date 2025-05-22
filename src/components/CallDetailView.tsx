@@ -1,4 +1,3 @@
-// src/app/calls/[id]/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -6,7 +5,7 @@ import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Textarea } from "@/components/ui/textarea";
-import { AudioPlayer } from "@/components/audio-player";
+import { AudioPlayer } from "@/components";
 import { Call } from "@/types";
 
 type Props = {

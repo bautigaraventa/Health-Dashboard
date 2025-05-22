@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, ListChecks } from "lucide-react";
-import { ThemeToggle } from "../ThemeToggle";
+import { ThemeToggle } from "@/components";
 import { useRouter } from "next/navigation";
 
 interface SidebarProps {

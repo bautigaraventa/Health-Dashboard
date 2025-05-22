@@ -24,7 +24,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import React from "react";
-import { TableToolbar } from "./table-toolbar";
+import { TableToolbar } from "./TableToolbar";
 import { useRouter } from "next/navigation";
 
 interface DataTableProps<TData, TValue> {

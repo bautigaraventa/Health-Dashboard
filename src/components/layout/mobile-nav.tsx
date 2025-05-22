@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Dialog } from "@headlessui/react";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "../ThemeToggle";
+import { ThemeToggle } from "@/components";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 

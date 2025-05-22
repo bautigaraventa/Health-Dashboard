@@ -10,7 +10,7 @@ import {
 } from "recharts";
 import { CallDurationData } from "@/types";
 import { ChartCard } from "./ChartCard";
-import { NoData } from "../NoData";
+import { NoData } from "@/components";
 
 interface Props {
   data: CallDurationData[];

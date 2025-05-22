@@ -9,7 +9,7 @@ import {
 } from "recharts";
 import { ChartCard } from "./ChartCard";
 import { EvaluationDataPoint } from "@/types";
-import { NoData } from "../NoData";
+import { NoData } from "@/components";
 
 interface EvaluationRateChartProps {
   data: EvaluationDataPoint[];

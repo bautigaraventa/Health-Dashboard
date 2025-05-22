@@ -2,11 +2,11 @@
 
 import { notFound } from "next/navigation";
 import callData from "@/mock/calls.json";
-import { CallDetailView } from "@/components/CallDetailView";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { ArrowLeftIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { CallDetailView } from "@/components";
 
 export default function CallDetailPage({ params }: { params: { id: string } }) {
   const router = useRouter();

@@ -8,7 +8,7 @@ import {
 } from "recharts";
 import { ChartCard } from "./ChartCard";
 import { OutcomeData } from "@/types";
-import { NoData } from "../NoData";
+import { NoData } from "@/components";
 
 const COLORS = [
   "#3b82f6",
