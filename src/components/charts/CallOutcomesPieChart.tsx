@@ -8,6 +8,7 @@ import {
 } from "recharts";
 import { ChartCard } from "./ChartCard";
 import { OutcomeData } from "@/types";
+import { NoData } from "../NoData";
 
 const COLORS = [
   "#3b82f6",
@@ -33,27 +34,31 @@ export function CallOutcomesPieChart({
       title="Call Outcomes"
       description="Displays the reasons calls ended (e.g. customer ended, assistant forwarded). Helps analyze call flow and drop-offs."
     >
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
-          <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            label
-            outerRadius={100}
-            dataKey="value"
-          >
-            {data.map((_, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={colors[index % colors.length]}
-              />
-            ))}
-          </Pie>
-          <Tooltip />
-          <Legend />
-        </PieChart>
-      </ResponsiveContainer>
+      {data.length > 0 ? (
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={data}
+              cx="50%"
+              cy="50%"
+              label
+              outerRadius={100}
+              dataKey="value"
+            >
+              {data.map((_, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={colors[index % colors.length]}
+                />
+              ))}
+            </Pie>
+            <Tooltip />
+            <Legend />
+          </PieChart>
+        </ResponsiveContainer>
+      ) : (
+        <NoData />
+      )}
     </ChartCard>
   );
 }

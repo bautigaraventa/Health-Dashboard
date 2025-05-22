@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import { CallDurationData } from "@/types";
 import { ChartCard } from "./ChartCard";
+import { NoData } from "../NoData";
 
 interface Props {
   data: CallDurationData[];
@@ -21,16 +22,20 @@ export function CallDurationBarChart({ data }: Props) {
       title="Call Duration"
       description="Shows how long calls lasted each day. Useful to spot patterns like unusually short or long calls."
     >
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
-          <YAxis allowDecimals={false} />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="duration" fill="#3b82f6" />
-        </BarChart>
-      </ResponsiveContainer>
+      {data.length > 0 ? (
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="date" />
+            <YAxis allowDecimals={false} />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="duration" fill="#3b82f6" />
+          </BarChart>
+        </ResponsiveContainer>
+      ) : (
+        <NoData />
+      )}
     </ChartCard>
   );
 }
