@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import {
   PieChart,
   Pie,
@@ -9,11 +6,18 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { ChartTitleWithTooltip } from "./ChartTitleWithTooltip";
+import { ChartCard } from "./ChartCard";
 import { OutcomeData } from "@/types";
 
-const COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"];
+const COLORS = [
+  "#3b82f6",
+  "#10b981",
+  "#f59e0b",
+  "#ef4444",
+  "#6d6565",
+  "#000000",
+  "#a22525",
+];
 
 interface CallOutcomesPieChartProps {
   data: OutcomeData[];
@@ -25,38 +29,31 @@ export function CallOutcomesPieChart({
   colors = COLORS,
 }: CallOutcomesPieChartProps) {
   return (
-    <Card className="w-full h-full">
-      <CardHeader className="pb-2">
-        <CardTitle className="text-lg">
-          <ChartTitleWithTooltip
-            title="Call Outcomes"
-            description="Displays the reasons calls ended (e.g. customer ended, assistant forwarded). Helps analyze call flow and drop-offs."
-          />
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="h-[300px]">
-        <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
-            <Pie
-              data={data}
-              cx="50%"
-              cy="50%"
-              label
-              outerRadius={100}
-              dataKey="value"
-            >
-              {data.map((_, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={colors[index % colors.length]}
-                />
-              ))}
-            </Pie>
-            <Tooltip />
-            <Legend />
-          </PieChart>
-        </ResponsiveContainer>
-      </CardContent>
-    </Card>
+    <ChartCard
+      title="Call Outcomes"
+      description="Displays the reasons calls ended (e.g. customer ended, assistant forwarded). Helps analyze call flow and drop-offs."
+    >
+      <ResponsiveContainer width="100%" height="100%">
+        <PieChart>
+          <Pie
+            data={data}
+            cx="50%"
+            cy="50%"
+            label
+            outerRadius={100}
+            dataKey="value"
+          >
+            {data.map((_, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={colors[index % colors.length]}
+              />
+            ))}
+          </Pie>
+          <Tooltip />
+          <Legend />
+        </PieChart>
+      </ResponsiveContainer>
+    </ChartCard>
   );
 }
