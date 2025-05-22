@@ -22,7 +22,7 @@ export function MobileNav({
   const router = useRouter();
 
   const navItems = [
-    { href: "/dashboard", label: "Dashboard" },
+    { href: "/", label: "Dashboard" },
     { href: "/calls", label: "Calls" },
   ];
 

@@ -15,7 +15,7 @@ export function Sidebar({ className = "" }: SidebarProps) {
   const router = useRouter();
 
   const navItems = [
-    { href: "/dashboard", label: "Dashboard", icon: Home },
+    { href: "/", label: "Dashboard", icon: Home },
     { href: "/calls", label: "Calls", icon: ListChecks },
   ];
 
