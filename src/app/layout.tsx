@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Shell } from "@/components/layout/shell";
 import { ThemeProvider } from "./theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata = {
   title: "Health Dashboard",
@@ -18,6 +19,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Shell>{children}</Shell>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   PieChart,
   Pie,
@@ -32,7 +34,7 @@ export function CallOutcomesPieChart({
   return (
     <ChartCard
       title="Call Outcomes"
-      description="Displays the reasons calls ended (e.g. customer ended, assistant forwarded). Helps analyze call flow and drop-offs."
+      description="Displays the reasons calls ended (e.g. customer ended, agent forwarded). Helps analyze call flow and drop-offs."
     >
       {data.length > 0 ? (
         <ResponsiveContainer width="100%" height="100%">

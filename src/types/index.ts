@@ -1,7 +1,7 @@
 export interface Call {
     call_id: string;
     ended_reason: CallEndedReason;
-    assistant: string;
+    agent: string;
     customer_phone_number: string;
     call_start_time: string;
     duration: number;
@@ -15,6 +15,7 @@ export interface Call {
     status_feedback_engineer: string;
     comments_engineer: string;
     company: string;
+    llm_feedback: string;
 };
 
 export interface MetricsData {
@@ -22,6 +23,10 @@ export interface MetricsData {
   callOutcomes: { name: string; value: number }[];
   callDurationOverTime: { date: string; duration: number }[];
   qaEvaluationsOverTime: { date: string; count: number }[];
+  totalEvaluated: number;
+  pendingQA: number;
+  avgDuration: number;
+  avgFeedbackQuality: number;
 }
 
 export interface OutcomeData {
@@ -42,6 +47,18 @@ export interface CallDurationData {
 export interface QAEvaluationDataPoint {
   date: string;
   count: number;
+};
+
+export interface SearchParams {
+  from?: string;
+  to?: string;
+  agent?: string;
+  company?: string;
+}
+
+export interface FilterOptions {
+  agents: string[];
+  companies: string[];
 };
 
 export enum CallEndedReason {

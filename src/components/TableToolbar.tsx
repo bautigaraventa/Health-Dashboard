@@ -16,7 +16,8 @@ export function TableToolbar<TData>({ table }: TableToolbarProps<TData>) {
     undefined
   );
   const [search, setSearch] = useState("");
-  const [selectedAssistant, setSelectedAssistant] = useState("all");
+  const [selectedAgent, setSelectedAgent] = useState("all");
+  const [selectedCompany, setSelectedCompany] = useState("all");
   const [selectedReviewer, setSelectedReviewer] = useState("all");
   const [selectedEvaluation, setSelectedEvaluation] = useState("all");
 
@@ -36,11 +37,15 @@ export function TableToolbar<TData>({ table }: TableToolbarProps<TData>) {
     table.setGlobalFilter(search || undefined);
   }, [search, table]);
 
-  const assistantOptions = Array.from(
+  const companyOptions = Array.from(
     new Set(
-      table
-        .getPreFilteredRowModel()
-        .rows.map((row) => row.original["assistant"])
+      table.getPreFilteredRowModel().rows.map((row) => row.original["company"])
+    )
+  );
+
+  const agentOptions = Array.from(
+    new Set(
+      table.getPreFilteredRowModel().rows.map((row) => row.original["agent"])
     )
   );
 
@@ -53,10 +58,12 @@ export function TableToolbar<TData>({ table }: TableToolbarProps<TData>) {
   const onClearFilters = () => {
     setSearch("");
     setDateRange(undefined);
-    setSelectedAssistant("all");
+    setSelectedCompany("all");
+    setSelectedAgent("all");
     setSelectedReviewer("all");
     setSelectedEvaluation("all");
-    table.getColumn("assistant")?.setFilterValue(undefined);
+    table.getColumn("company")?.setFilterValue(undefined);
+    table.getColumn("agent")?.setFilterValue(undefined);
     table.getColumn("reviewer")?.setFilterValue(undefined);
     table.getColumn("evaluation")?.setFilterValue(undefined);
   };
@@ -79,14 +86,26 @@ export function TableToolbar<TData>({ table }: TableToolbarProps<TData>) {
         />
       </div>
       <FilterSelect
-        id="assistant"
-        label="Assistant"
-        value={selectedAssistant}
-        options={assistantOptions}
+        id="company"
+        label="Company"
+        value={selectedCompany}
+        options={companyOptions}
         onChange={(value) => {
-          setSelectedAssistant(value);
+          setSelectedCompany(value);
           table
-            .getColumn("assistant")
+            .getColumn("company")
+            ?.setFilterValue(value === "all" ? undefined : value);
+        }}
+      />
+      <FilterSelect
+        id="agent"
+        label="Agent"
+        value={selectedAgent}
+        options={agentOptions}
+        onChange={(value) => {
+          setSelectedAgent(value);
+          table
+            .getColumn("agent")
             ?.setFilterValue(value === "all" ? undefined : value);
         }}
       />
@@ -106,14 +125,14 @@ export function TableToolbar<TData>({ table }: TableToolbarProps<TData>) {
         id="evaluation"
         label="Evaluation"
         value={selectedEvaluation}
-        options={["true", "false"]}
+        options={["Done", "Pending"]}
         placeholder="All statuses"
         onChange={(value) => {
           setSelectedEvaluation(value);
           const column = table.getColumn("evaluation");
           if (!column) return;
 
-          column.setFilterValue(value === "all" ? undefined : value === "true");
+          column.setFilterValue(value === "all" ? undefined : value === "Done");
         }}
       />
       <DateRangePicker date={dateRange} setDate={setDateRange} />

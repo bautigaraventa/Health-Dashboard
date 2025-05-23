@@ -1,16 +1,14 @@
-"use client";
-
 import { notFound } from "next/navigation";
-import callData from "@/mock/calls.json";
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-import { ArrowLeftIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { CallDetailView } from "@/components";
+import { BackButton, CallDetailView } from "@/components";
+import { getCallById } from "@/lib/utils";
 
-export default function CallDetailPage({ params }: { params: { id: string } }) {
-  const router = useRouter();
-  const call = callData.find((c) => c.call_id === params.id);
+export default async function CallDetailPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const call = await getCallById(params.id);
 
   if (!call) {
     notFound();
@@ -19,13 +17,7 @@ export default function CallDetailPage({ params }: { params: { id: string } }) {
   return (
     <main className="p-2 md:p-6 space-y-6">
       <div className="flex gap-4">
-        <Button
-          onClick={() => router.push("/calls")}
-          variant="outline"
-          className="cursor-pointer"
-        >
-          <ArrowLeftIcon className="h-5 w-5" />
-        </Button>
+        <BackButton url="/calls" />
         <h1 className="text-2xl font-bold">Call Details</h1>
         {call.reviewer && (
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -36,9 +28,7 @@ export default function CallDetailPage({ params }: { params: { id: string } }) {
               />
               <AvatarFallback>{call.reviewer[0]}</AvatarFallback>
             </Avatar>
-            <span className="text-muted-foreground">
-              Reviewed by {call.reviewer}
-            </span>
+            <span>Reviewed by {call.reviewer}</span>
           </div>
         )}
       </div>

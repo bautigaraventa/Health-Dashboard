@@ -2,12 +2,11 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 
 export type Call = {
   call_id: string;
-  assistant: string;
+  agent: string;
   customer_phone_number: string;
   call_start_time: string;
   duration: number;
@@ -25,10 +24,17 @@ export const columns: ColumnDef<Call>[] = [
     ),
   },
   {
-    accessorKey: "assistant",
-    header: "Assistant",
+    accessorKey: "company",
+    header: "Company",
     cell: ({ row }) => (
-      <div className="truncate max-w-[100px]">{row.getValue("assistant")}</div>
+      <div className="truncate max-w-[100px]">{row.getValue("company")}</div>
+    ),
+  },
+  {
+    accessorKey: "agent",
+    header: "Agent",
+    cell: ({ row }) => (
+      <div className="truncate max-w-[100px]">{row.getValue("agent")}</div>
     ),
   },
   {

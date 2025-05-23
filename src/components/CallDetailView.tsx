@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Textarea } from "@/components/ui/textarea";
 import { AudioPlayer } from "@/components";
 import { Call } from "@/types";
+import { toast } from "sonner";
 
 type Props = {
   call: Call;
@@ -15,11 +16,10 @@ type Props = {
 export function CallDetailView({ call }: Props) {
   const [evaluationDone, setEvaluationDone] = useState(!!call.evaluation);
   const [feedbackQA, setFeedbackQA] = useState(call.feedback_qa || "");
-  const [statusSaved, setStatusSaved] = useState(false);
 
   const handleSave = () => {
     setEvaluationDone(true);
-    setStatusSaved(true);
+    toast.success("Your evaluation has been successfully submitted.");
     // Future: save to backend or global state
   };
 
@@ -39,7 +39,7 @@ export function CallDetailView({ call }: Props) {
       <section className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <Detail label="Call ID" value={call.call_id} />
         <Detail label="Customer Phone" value={call.customer_phone_number} />
-        <Detail label="Assistant" value={call.assistant} />
+        <Detail label="Agent" value={call.agent} />
         <Detail
           label="Call Start"
           value={format(new Date(call.call_start_time), "PPpp")}
@@ -68,27 +68,36 @@ export function CallDetailView({ call }: Props) {
         />
       </section>
 
-      <section className="space-y-4">
-        <h2 className="text-lg font-semibold">QA Feedback</h2>
-        <Textarea
-          placeholder="Add your QA feedback..."
-          value={feedbackQA}
-          onChange={(e) => {
-            setFeedbackQA(e.target.value);
-            setStatusSaved(false);
-          }}
-        />
-        <Button onClick={handleSave}>Save Evaluation</Button>
-        {statusSaved && <Badge variant="outline">✅ Saved (mocked)</Badge>}
+      <section className="flex xl:flex-row flex-col center gap-4 space-y-4">
+        <div className="xl:w-1/2">
+          <h2 className="text-lg font-semibold">Feedback</h2>
+          <Textarea
+            className="h-[95%]"
+            placeholder="Add your feedback..."
+            value={feedbackQA}
+            onChange={(e) => {
+              setFeedbackQA(e.target.value);
+            }}
+          />
+        </div>
+        <div className="xl:w-1/2 ">
+          <h2 className="text-lg font-semibold">LLM Evaluation</h2>
+          {call.llm_feedback ? (
+            <p className="bg-muted p-4 rounded-md">{call.llm_feedback}</p>
+          ) : (
+            <Badge variant="destructive">Missing LLM Evaluation</Badge>
+          )}
+        </div>
       </section>
+      <Button onClick={handleSave}>Save Evaluation</Button>
     </main>
   );
 }
 
-function Detail({ label, value }: { label: string; value: React.ReactNode }) {
+function Detail({ label, value }: { label?: string; value: React.ReactNode }) {
   return (
     <div className="rounded-lg border p-4 space-y-1">
-      <p className="text-sm text-muted-foreground">{label}</p>
+      {label && <p className="text-sm text-muted-foreground">{label}</p>}
       <p className="text-base font-medium">{value}</p>
     </div>
   );

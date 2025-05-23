@@ -2,7 +2,7 @@
   {
     "call_id": "95688f4f-7f46-4493-93c3-42fc172a2008",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "14153761745",
     "call_start_time": "2025-01-16T17:20:47.617Z",
     "duration": 175.757,
@@ -15,12 +15,13 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "fd1f469d-96d3-4c23-ae7f-742221c268b1",
     "ended_reason": "silence-timed-out",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "18885746007",
     "call_start_time": "2025-01-18T00:17:58.551Z",
     "duration": 34.121,
@@ -33,12 +34,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "12d13044-fe3b-460f-89c1-7487f6bca58d",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "18885746007",
     "call_start_time": "2025-01-20T22:10:52.027Z",
     "duration": 19.035,
@@ -51,12 +52,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "4ded2407-d9f8-45a7-899d-2c59170dadb3",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "16016270114",
     "call_start_time": "2025-01-21T01:18:56.924Z",
     "duration": 5.897,
@@ -69,12 +70,13 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Bikia"
+    "company": "Clinic B",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "b3b71c74-e2ec-4d34-8ae0-e49e13502a53",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "14155393048",
     "call_start_time": "2025-01-21T20:13:54.549Z",
     "duration": 3.72,
@@ -87,12 +89,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "a3bccb57-964d-43f9-9c6c-2696a8d28aa2",
     "ended_reason": "assistant-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "15717818166",
     "call_start_time": "2025-01-21T23:52:00.636Z",
     "duration": 54.292,
@@ -105,12 +107,12 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Therafit"
+    "company": "Clinic C"
   },
   {
     "call_id": "d4b3d343-556a-406c-9437-7952b2296899",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "15713287585",
     "call_start_time": "2025-01-22T14:38:58.920Z",
     "duration": 22.945,
@@ -123,12 +125,12 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "ee758d7a-495c-4b5f-b110-3df98fcf320e",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "19176268612",
     "call_start_time": "2025-01-22T16:12:34.846Z",
     "duration": 42.85,
@@ -141,12 +143,13 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Bikia"
+    "company": "Clinic B",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "134281b2-1b84-4efb-94ca-a37c528b5c7c",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "18047438403",
     "call_start_time": "2025-01-22T20:49:40.154Z",
     "duration": 7.574,
@@ -159,12 +162,12 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "01041491-93aa-49db-a2f7-9447937283f8",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17722180490",
     "call_start_time": "2025-01-22T21:05:45.600Z",
     "duration": 16.674,
@@ -177,12 +180,12 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "39286c42-0f21-4fb6-8ecd-4a15b0ebcc2b",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "13018071851",
     "call_start_time": "2025-01-23T13:10:31.950Z",
     "duration": 39.009,
@@ -195,12 +198,12 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "51166dfe-91e6-487b-87d5-6dc9aa1e144b",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17722180490",
     "call_start_time": "2025-01-23T14:53:17.535Z",
     "duration": 23.152,
@@ -213,12 +216,12 @@
     "feedback_qa": "",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "14f4cae9-14af-4985-9b85-71967e4545f3",
     "ended_reason": "silence-timed-out",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "18666223696",
     "call_start_time": "2025-01-29T23:10:27.504Z",
     "duration": 34.106,
@@ -231,12 +234,13 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "ffadfaea-99df-4961-9cdb-64264ac8bc40",
     "ended_reason": "silence-timed-out",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "18666223696",
     "call_start_time": "2025-01-29T23:16:09.358Z",
     "duration": 34.066,
@@ -249,12 +253,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "4dd63ce0-856d-4cc0-806f-314d58ff20c2",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17036560023",
     "call_start_time": "2025-01-30T01:37:10.979Z",
     "duration": 12.01,
@@ -267,12 +271,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "903dd484-96f9-415c-b835-30d6a6b55dfa",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "12403745445",
     "call_start_time": "2025-01-30T13:35:34.472Z",
     "duration": 27.497,
@@ -285,12 +289,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "45e7431b-c13d-460e-8aa4-93e6d4733b6b",
     "ended_reason": "assistant-hung-up",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "19143323593",
     "call_start_time": "2025-01-30T14:03:17.295Z",
     "duration": 31.452,
@@ -303,12 +307,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "CCBS"
+    "company": "Clinic C"
   },
   {
     "call_id": "a91abdc3-89de-4e95-b0b5-1fe6d5cf35e6",
     "ended_reason": "assistant-hung-up",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "16782819611",
     "call_start_time": "2025-01-30T14:16:57.952Z",
     "duration": 30.091,
@@ -321,12 +325,13 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "92548d80-6814-4fd6-ad2b-34eeb68279b2",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "12156170325",
     "call_start_time": "2025-02-03T14:03:49.533Z",
     "duration": 27.187,
@@ -339,12 +344,12 @@
     "feedback_qa": "Puede Annie preguntar en cual location esta la persona y proveerle con especificaciones en vez de transferirla? Podriamos preguntarle las especificaciones al cliente para que los pacientes puedan llegar sin problema a la locacion.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "bb643cf8-f639-40ce-bb61-dc07a8200406",
     "ended_reason": "pipeline-error-eleven-labs-500-server-error",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17033570569",
     "call_start_time": "2025-02-03T14:17:35.785Z",
     "duration": 20.331,
@@ -357,12 +362,12 @@
     "feedback_qa": "La llamada se cortó",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "67627c1d-1db7-4dc9-b091-25beacae2fa4",
     "ended_reason": "customer-ended-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "19547434255",
     "call_start_time": "2025-02-03T16:07:18.498Z",
     "duration": 55.261,
@@ -375,12 +380,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "2d3bf53b-d977-40af-a1f1-73dd117a2eac",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "653fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "16462168533",
     "call_start_time": "2025-02-03T18:40:29.437Z",
     "duration": 21.453,
@@ -393,12 +398,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "92548d80-6814-4fd6-ad2b-34eeb68279b2",
     "ended_reason": "assistant-forwarded-call",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "12156170325",
     "call_start_time": "2025-02-03T14:03:49.533Z",
     "duration": 27.187,
@@ -411,12 +416,12 @@
     "feedback_qa": "Puede Annie preguntar en cual location esta la persona y proveerle con especificaciones en vez de transferirla? Podriamos preguntarle las especificaciones al cliente para que los pacientes puedan llegar sin problema a la locacion.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "bb643cf8-f639-40ce-bb61-dc07a8200406",
     "ended_reason": "pipeline-error-eleven-labs-500-server-error",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17033570569",
     "call_start_time": "2025-02-03T14:17:35.785Z",
     "duration": 20.331,
@@ -429,12 +434,12 @@
     "feedback_qa": "La llamada se cortó",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "67627c1d-1db7-4dc9-b091-25beacae2fa4",
     "ended_reason": "customer-ended-call",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "19547434255",
     "call_start_time": "2025-02-03T16:07:18.498Z",
     "duration": 55.261,
@@ -447,12 +452,12 @@
     "feedback_qa": "N/A",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "2d3bf53b-d977-40af-a1f1-73dd117a2eac",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "14082626238",
     "call_start_time": "2025-02-03T16:24:50.827Z",
     "duration": 28.708,
@@ -465,12 +470,12 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "2f07a99f-f4ab-4bb8-9a56-9cb453ef13f7",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "19167981393",
     "call_start_time": "2025-02-03T16:27:00.448Z",
     "duration": 24.635,
@@ -483,12 +488,12 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "73abf457-11fa-4022-b7c4-9a5cd8822a3f",
     "ended_reason": "customer-ended-call",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "14082626238",
     "call_start_time": "2025-02-03T16:28:57.776Z",
     "duration": 50.666,
@@ -501,12 +506,12 @@
     "feedback_qa": "Estuvo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "c4a567fc-001f-4c1a-8b11-b98df86e4e52",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "19547434255",
     "call_start_time": "2025-02-03T16:31:35.322Z",
     "duration": 20.32,
@@ -519,12 +524,12 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Examedi"
+    "company": "Clinic A"
   },
   {
     "call_id": "78808489-f3aa-4f5a-b9cf-6ff3d7e861b6",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17602168294",
     "call_start_time": "2025-02-04T15:52:20.112Z",
     "duration": 21.365,
@@ -537,12 +542,13 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Bikia"
+    "company": "Clinic B",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "b26ab420-e1f5-4df2-818b-72339d8d3744",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "17602168294",
     "call_start_time": "2025-02-04T15:54:24.744Z",
     "duration": 22.301,
@@ -555,12 +561,13 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Bikia"
+    "company": "Clinic B",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "2c45e501-8bb2-402c-baa7-c8a763f05c38",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "16173864720",
     "call_start_time": "2025-02-04T15:56:40.287Z",
     "duration": 27.173,
@@ -573,12 +580,13 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Bikia"
+    "company": "Clinic B",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   },
   {
     "call_id": "76e79b45-2e47-44c5-9f68-679164afaf3e",
     "ended_reason": "assistant-hung-up",
-    "assistant": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
+    "agent": "123fe3ea-5c24-439a-9a4b-0b17d78e3577",
     "customer_phone_number": "12134247223",
     "call_start_time": "2025-02-04T15:59:02.951Z",
     "duration": 28.96,
@@ -591,6 +599,7 @@
     "feedback_qa": "Todo bien.",
     "status_feedback_engineer": "",
     "comments_engineer": "",
-    "company": "Bikia"
+    "company": "Clinic B",
+    "llm_feedback": "Valentina handled the core requirements of the protocol well by identifying the appointment adjustment request, providing some information from the knowledge base, asking for transfer permission, and executing the transfer correctly. However, there were some areas for improvement: 1) The initial Spanish response had an awkward phrase 'puedes dar más?' that seemed incomplete, 2) There was some fragmentation in responses with interruptions, 3) When providing location information, the speech pattern was somewhat disjointed with numbers spelled out individually rather than naturally, and 4) She could have more clearly explained that the scheduling team could help with the specific appointment location rather than just general location information."
   }
 ]

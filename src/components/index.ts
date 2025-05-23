@@ -9,3 +9,4 @@ export { NoData } from './NoData';
 export { PageHeader } from './PageHeader';
 export { TableToolbar } from './TableToolbar';
 export { ThemeToggle } from './ThemeToggle';
+export { BackButton } from './BackButton';
