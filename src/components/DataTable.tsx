@@ -27,13 +27,14 @@ import React from "react";
 import { TableToolbar } from "./TableToolbar";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { Call } from "@/app/calls/columns";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
 }
 
-export function DataTable<TData, TValue>({
+export function DataTable<TData extends Call, TValue>({
   columns,
   data,
 }: DataTableProps<TData, TValue>) {

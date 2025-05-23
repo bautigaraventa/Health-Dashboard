@@ -34,11 +34,12 @@ const QAEvaluationRateChart = dynamic(() =>
 export default async function Home({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }) {
+  const params = await searchParams;
   const calls = await getCalls();
 
-  const filteredCalls = filterCalls({ calls, filters: searchParams });
+  const filteredCalls = await filterCalls({ calls, filters: params });
 
   const {
     evaluationRateOverTime,

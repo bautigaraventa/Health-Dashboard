@@ -36,7 +36,6 @@ export function AudioPlayer({ url }: AudioPlayerProps) {
       waveColor: "#cbd5e1",
       progressColor: "#3b82f6",
       height: 80,
-      responsive: true,
     });
 
     wavesurfer.load(url);
@@ -51,10 +50,6 @@ export function AudioPlayer({ url }: AudioPlayerProps) {
     });
 
     wavesurfer.on("audioprocess", () => {
-      setCurrentTime(wavesurfer.getCurrentTime());
-    });
-
-    wavesurfer.on("seek", () => {
       setCurrentTime(wavesurfer.getCurrentTime());
     });
 

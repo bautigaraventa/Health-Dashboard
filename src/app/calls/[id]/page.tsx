@@ -6,9 +6,10 @@ import { getCallById } from "@/lib/utils";
 export default async function CallDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const call = await getCallById(params.id);
+  const { id } = await params;
+  const call = await getCallById(id);
 
   if (!call) {
     notFound();

@@ -91,13 +91,15 @@ export function generateMetrics(calls: Call[]): MetricsData {
   };
 }
 
-export function filterCalls({
+export async function filterCalls({
   calls,
-  filters: { from, to, agent, company },
+  filters,
 }: {
   calls: Call[];
   filters: SearchParams;
 }) {
+  const { from, to, agent, company } = filters;
+  
   return calls.filter((call) => {
     const callDate = new Date(call.call_start_time);
     const dateFrom = from ? new Date(from) : undefined;
