@@ -1,6 +1,7 @@
 import { Call, CallEndedReason, CallEndedReasonLabels, FilterOptions, MetricsData, SearchParams } from "@/types";
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
+import calls from '@/mock/calls.json';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -130,20 +131,18 @@ export function getFiltersOptions({ calls }: { calls: Call[] }): FilterOptions {
   };
 }
 
+// This should hit a real api instead of grabbing data from json
 export async function getCalls(): Promise<Call[]> {
-  // this should hit a real api instead of grabbing data from json
-  const data = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/data/calls.json`
-  );
-  return data.json();
+   // const data = await fetch(API_ENDPOINT);
+  //  return data.json();
+   return calls as Call[];
 }
 
+// This should hit a real api instead of grabbing data from json
 export async function getCallById(id: string): Promise<Call | undefined> {
-  const data = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/data/calls.json`
-  );
-  const calls: Call[] = await data.json();
+  // const data = await fetch(API_ENDPOINT);
+  // const call: Call = await data.json();
   const call = calls.find((c) => c.call_id === id);
 
-  return call;
+  return call as Call;
 }
