@@ -133,14 +133,14 @@ export function getFiltersOptions({ calls }: { calls: Call[] }): FilterOptions {
 export async function getCalls(): Promise<Call[]> {
   // this should hit a real api instead of grabbing data from json
   const data = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/data/calls.json`
+    `${process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL}/data/calls.json`
   );
   return data.json();
 }
 
 export async function getCallById(id: string): Promise<Call | undefined> {
   const data = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/data/calls.json`
+    `${process.env.VERCEL_URL || process.env.NEXT_PUBLIC_SITE_URL}/data/calls.json`
   );
   const calls: Call[] = await data.json();
   const call = calls.find((c) => c.call_id === id);
