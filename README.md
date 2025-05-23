@@ -48,10 +48,6 @@ Built with scalability, clarity, and performance in mind using **Next.js 15**, *
 │ ├── AudioPlayer.tsx # Waveform audio player
 │ └── CallDetailView.tsx # Full call + evaluations view
 │
-├── hooks/
-│ ├── useDashboardMetrics.ts # Compute metrics from call data
-│ ├── useKpiMetrics.ts # Agent/company/date breakdown
-│
 ├── lib/ # Utilities
 ├── mock/ # Sample data (calls.json)
 └── types/ # TypeScript types
