@@ -2,8 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import WaveSurfer from "wavesurfer.js";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   PauseIcon,
   PlayIcon,
@@ -11,8 +9,10 @@ import {
   Volume2Icon,
   VolumeXIcon,
   DownloadIcon,
+  Loader2,
 } from "lucide-react";
-import { Loader2 } from "lucide-react";
+
+import { Button, Card, CardContent } from "@/components/ui";
 
 interface AudioPlayerProps {
   url: string;

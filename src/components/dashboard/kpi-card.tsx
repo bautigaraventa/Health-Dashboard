@@ -1,14 +1,19 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { ReactNode } from "react";
 import CountUp from "react-countup";
 import { Info } from "lucide-react";
 import { motion } from "framer-motion";
+
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui";
 
 interface KpiCardProps {
   title: string;
@@ -16,7 +21,7 @@ interface KpiCardProps {
   suffix?: string;
   description: string;
   tooltip: string;
-  icon?: React.ReactNode;
+  icon?: ReactNode;
 }
 
 export function KpiCard({

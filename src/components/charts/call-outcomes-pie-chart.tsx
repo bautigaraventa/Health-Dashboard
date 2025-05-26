@@ -8,9 +8,9 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import { ChartCard } from "./ChartCard";
+import { ChartCard } from "./chart-card";
 import { OutcomeData } from "@/types";
-import { NoData } from "@/components";
+import { NoData } from "@/components/ui";
 
 const COLORS = [
   "#3b82f6",

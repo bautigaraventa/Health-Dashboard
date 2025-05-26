@@ -1,6 +1,4 @@
-"use client";
-
-import { KpiCard } from "./KpiCard";
+import { KpiCard } from "./kpi-card";
 import { CheckCircle, Clock, Timer, MessageSquare } from "lucide-react";
 
 interface KpiCardsProps {

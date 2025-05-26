@@ -11,8 +11,8 @@ import {
   Legend,
 } from "recharts";
 import { CallDurationData } from "@/types";
-import { ChartCard } from "./ChartCard";
-import { NoData } from "@/components";
+import { ChartCard } from "./chart-card";
+import { NoData } from "@/components/ui";
 
 interface Props {
   data: CallDurationData[];

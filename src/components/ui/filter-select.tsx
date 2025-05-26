@@ -1,13 +1,11 @@
-"use client";
-
 import {
+  Label,
   Select,
   SelectTrigger,
   SelectValue,
   SelectContent,
   SelectItem,
-} from "@/components/ui/select";
-import { Label } from "@/components/ui/label";
+} from "@/components/ui";
 
 interface FilterSelectProps {
   id: string;

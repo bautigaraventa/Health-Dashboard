@@ -1,6 +1,6 @@
 import { getCalls } from "@/lib/utils";
 import { columns } from "./columns";
-import { DataTable, PageHeader } from "@/components";
+import { DataTable, PageHeader } from "@/components/ui";
 
 export default async function CallsPage() {
   const calls = await getCalls();

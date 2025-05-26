@@ -1,4 +1,4 @@
-export { CallDurationBarChart } from './CallDurationBarChart';
-export { CallOutcomesPieChart } from './CallOutcomesPieChart';
-export { EvaluationRateChart } from './EvaluationRateChart';
-export { QAEvaluationRateChart } from './QAEvaluationRateChart';
+export { CallDurationBarChart } from './call-duration-car-chart';
+export { CallOutcomesPieChart } from './call-outcomes-pie-chart';
+export { EvaluationRateChart } from './evaluation-rate-chart';
+export { QAEvaluationRateChart } from './qa-evaluation-rate-chart';

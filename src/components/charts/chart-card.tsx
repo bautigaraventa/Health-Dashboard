@@ -1,12 +1,16 @@
 import { ReactNode } from "react";
 import { Info } from "lucide-react";
 import { motion } from "framer-motion";
+
 import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+} from "@/components/ui";
 
 interface ChartCardProps {
   title: string;

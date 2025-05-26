@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { BackButton, CallDetailView } from "@/components";
+
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  BackButton,
+} from "@/components/ui";
 import { getCallById } from "@/lib/utils";
+import { CallDetail } from "@/components/calls";
 
 export default async function CallDetailPage({
   params,
@@ -24,7 +30,7 @@ export default async function CallDetailPage({
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Avatar className="h-6 w-6">
               <AvatarImage
-                src={`https://api.dicebear.com/6.x/initials/svg?seed=${call.reviewer}`}
+                src={`${process.env.AVATAR_URL}${call.reviewer}`}
                 alt={call.reviewer}
               />
               <AvatarFallback>{call.reviewer[0]}</AvatarFallback>
@@ -33,7 +39,7 @@ export default async function CallDetailPage({
           </div>
         )}
       </div>
-      <CallDetailView call={call} />
+      <CallDetail call={call} />
     </main>
   );
 }

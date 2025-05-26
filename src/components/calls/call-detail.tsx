@@ -2,18 +2,18 @@
 
 import { useState } from "react";
 import { format } from "date-fns";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Textarea } from "@/components/ui/textarea";
-import { AudioPlayer } from "@/components";
+
+import { Badge, Button, Textarea } from "@/components/ui";
 import { Call } from "@/types";
 import { toast } from "sonner";
+import { AudioPlayer } from "./audio-player";
+import { DetailCard } from "./detail-card";
 
-type Props = {
+interface CallDetailProps {
   call: Call;
-};
+}
 
-export function CallDetailView({ call }: Props) {
+export function CallDetail({ call }: CallDetailProps) {
   const [evaluationDone, setEvaluationDone] = useState(!!call.evaluation);
   const [feedbackQA, setFeedbackQA] = useState(call.feedback_qa || "");
 
@@ -37,16 +37,19 @@ export function CallDetailView({ call }: Props) {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <Detail label="Call ID" value={call.call_id} />
-        <Detail label="Customer Phone" value={call.customer_phone_number} />
-        <Detail label="Agent" value={call.agent} />
-        <Detail
+        <DetailCard label="Call ID" value={call.call_id} />
+        <DetailCard label="Customer Phone" value={call.customer_phone_number} />
+        <DetailCard label="Agent" value={call.agent} />
+        <DetailCard
           label="Call Start"
           value={format(new Date(call.call_start_time), "PPpp")}
         />
-        <Detail label="Duration" value={`${Math.round(call.duration)} sec`} />
-        <Detail label="Ended Reason" value={call.ended_reason} />
-        <Detail
+        <DetailCard
+          label="Duration"
+          value={`${Math.round(call.duration)} sec`}
+        />
+        <DetailCard label="Ended Reason" value={call.ended_reason} />
+        <DetailCard
           label="Evaluation"
           value={
             evaluationDone ? (
@@ -56,7 +59,7 @@ export function CallDetailView({ call }: Props) {
             )
           }
         />
-        <Detail
+        <DetailCard
           label="QA Check"
           value={
             call.qa_check === "QA Done" ? (
@@ -91,14 +94,5 @@ export function CallDetailView({ call }: Props) {
       </section>
       <Button onClick={handleSave}>Save Evaluation</Button>
     </main>
-  );
-}
-
-function Detail({ label, value }: { label?: string; value: React.ReactNode }) {
-  return (
-    <div className="rounded-lg border p-4 space-y-1">
-      {label && <p className="text-sm text-muted-foreground">{label}</p>}
-      <p className="text-base font-medium">{value}</p>
-    </div>
   );
 }

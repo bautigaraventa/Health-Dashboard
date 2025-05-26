@@ -2,6 +2,8 @@
 
 Solum Health Technical Challenge by bautigaraventa
 
+Live demo: https://health-dashboard-bauti.vercel.app/
+
 ## 🧠 Overview
 
 This is a responsive, production-grade QA Dashboard that replaces a cluttered Google Sheet currently used to track and evaluate Voice AI agent calls.
@@ -27,7 +29,6 @@ Built with scalability, clarity, and performance in mind using **Next.js 15**, *
 - **Audio**: WaveSurfer.js (via `@wavesurfer/react`)
 - **Date utils**: date-fns
 - **State**: React hooks + local state
-- **AI-ready**: Project is structured to easily support LLM and Whisper APIs
 - **Deployment**: Vercel
 
 ---
@@ -41,12 +42,11 @@ Built with scalability, clarity, and performance in mind using **Next.js 15**, *
 │ ├── calls/ # Table view + Call Detail view
 │
 ├── components/
+│ ├── calls/ # Call details
 │ ├── charts/ # Reusable data visualizations
 │ ├── dashboard/ # KPI cards and DashboardHeader
-│ ├── ui/ # shadcn-ui components (customized)
-│ ├── layout/ # Shell, sidebar, mobile nav
-│ ├── AudioPlayer.tsx # Waveform audio player
-│ └── CallDetailView.tsx # Full call + evaluations view
+│ ├── layout/ # Shell
+│ ├── ui/ # shadcn-ui and generic components
 │
 ├── lib/ # Utilities
 ├── mock/ # Sample data (calls.json)
@@ -58,6 +58,8 @@ Built with scalability, clarity, and performance in mind using **Next.js 15**, *
 ## 🚀 Getting Started
 
 Clone this repo
+
+Set ENV variable in your .env.local: `AVATAR_URL=https://api.dicebear.com/6.x/initials/svg?seed=`
 
 ```bash
 npm install

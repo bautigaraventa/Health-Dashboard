@@ -1,20 +1,21 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Table } from "@tanstack/react-table";
-import { Input } from "@/components/ui/input";
 import { DateRange } from "react-day-picker";
-import { DateRangePicker } from "@/components";
-import React, { useEffect, useState } from "react";
-import { ClearFiltersButton, FilterSelect } from "@/components";
+import {
+  ClearFiltersButton,
+  FilterSelect,
+  Input,
+  DateRangePicker,
+} from "@/components/ui";
 
 interface TableToolbarProps<TData> {
   table: Table<TData>;
 }
 
 export function TableToolbar<TData>({ table }: TableToolbarProps<TData>) {
-  const [dateRange, setDateRange] = React.useState<DateRange | undefined>(
-    undefined
-  );
+  const [dateRange, setDateRange] = useState<DateRange | undefined>(undefined);
   const [search, setSearch] = useState("");
   const [selectedAgent, setSelectedAgent] = useState("all");
   const [selectedCompany, setSelectedCompany] = useState("all");

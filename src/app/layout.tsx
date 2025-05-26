@@ -1,18 +1,16 @@
 import "./globals.css";
-import { Shell } from "@/components/layout/shell";
+import { ReactNode } from "react";
+
+import { Shell } from "@/components/layout";
+import { Toaster } from "@/components/ui";
 import { ThemeProvider } from "./theme-provider";
-import { Toaster } from "@/components/ui/sonner";
 
 export const metadata = {
   title: "Health Dashboard",
   description: "Dashboard and call evaluation tool",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="dark">
       <body>

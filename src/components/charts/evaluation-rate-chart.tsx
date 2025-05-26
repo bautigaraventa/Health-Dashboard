@@ -9,9 +9,9 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import { ChartCard } from "./ChartCard";
+import { ChartCard } from "./chart-card";
 import { EvaluationDataPoint } from "@/types";
-import { NoData } from "@/components";
+import { NoData } from "@/components/ui";
 
 interface EvaluationRateChartProps {
   data: EvaluationDataPoint[];

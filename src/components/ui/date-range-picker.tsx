@@ -1,16 +1,14 @@
-"use client";
-
-import * as React from "react";
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { DateRange } from "react-day-picker";
+
 import {
+  Button,
+  Calendar,
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
-import { Button } from "@/components/ui/button";
+} from "@/components/ui";
 
 interface DateRangePickerProps {
   date: DateRange | undefined;

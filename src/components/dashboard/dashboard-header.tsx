@@ -6,7 +6,7 @@ import {
   ClearFiltersButton,
   DateRangePicker,
   FilterSelect,
-} from "@/components";
+} from "@/components/ui";
 import { format, parse } from "date-fns";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,7 @@
 "use client";
 
+import { useCallback, useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   flexRender,
   getCoreRowModel,
@@ -13,19 +15,15 @@ import {
 } from "@tanstack/react-table";
 
 import {
+  Button,
+  TableToolbar,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import React from "react";
-import { TableToolbar } from "./TableToolbar";
-import { useRouter } from "next/navigation";
+} from "@/components/ui";
 import { motion } from "framer-motion";
 import { Call } from "@/app/calls/columns";
 
@@ -46,7 +44,7 @@ export function DataTable<TData extends Call, TValue>({
   );
   const [sorting, setSorting] = useState<SortingState>([]);
 
-  const globalFilterFn = React.useCallback((row, columnId, filterValue) => {
+  const globalFilterFn = useCallback((row, columnId, filterValue) => {
     const callId = row.getValue("call_id") as string;
     const phone = row.getValue("customer_phone_number") as string;
     const search = (filterValue ?? "").toLowerCase();

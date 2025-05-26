@@ -1,32 +1,32 @@
-import { SearchParams } from "@/types";
+import dynamic from "next/dynamic";
 
-import { DashboardHeader, PageHeader } from "@/components";
-import { KpiCards } from "@/components/dashboard/KpiCards";
+import { SearchParams } from "@/types";
+import { PageHeader } from "@/components/ui";
 import {
   filterCalls,
   generateMetrics,
   getCalls,
   getFiltersOptions,
 } from "@/lib/utils";
-import dynamic from "next/dynamic";
+import { DashboardHeader, KpiCards } from "@/components/dashboard";
 
 const EvaluationRateChart = dynamic(() =>
-  import("@/components/charts/EvaluationRateChart").then(
+  import("@/components/charts/evaluation-rate-chart").then(
     (mod) => mod.EvaluationRateChart
   )
 );
 const CallOutcomesPieChart = dynamic(() =>
-  import("@/components/charts/CallOutcomesPieChart").then(
+  import("@/components/charts/call-outcomes-pie-chart").then(
     (mod) => mod.CallOutcomesPieChart
   )
 );
 const CallDurationBarChart = dynamic(() =>
-  import("@/components/charts/CallDurationBarChart").then(
+  import("@/components/charts/call-duration-car-chart").then(
     (mod) => mod.CallDurationBarChart
   )
 );
 const QAEvaluationRateChart = dynamic(() =>
-  import("@/components/charts/QAEvaluationRateChart").then(
+  import("@/components/charts/qa-evaluation-rate-chart").then(
     (mod) => mod.QAEvaluationRateChart
   )
 );

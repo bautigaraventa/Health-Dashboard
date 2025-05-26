@@ -10,9 +10,9 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import { ChartCard } from "./ChartCard";
+import { ChartCard } from "./chart-card";
 import { QAEvaluationDataPoint } from "@/types";
-import { NoData } from "@/components";
+import { NoData } from "@/components/ui";
 
 interface QAEvaluationRateChartProps {
   data: QAEvaluationDataPoint[];
