@@ -62,7 +62,7 @@ export function AudioPlayer({ url }: AudioPlayerProps) {
         wavesurfer.destroy();
       } catch {}
     };
-  }, [url]);
+  }, []);
 
   useEffect(() => {
     if (wavesurferRef.current) {
